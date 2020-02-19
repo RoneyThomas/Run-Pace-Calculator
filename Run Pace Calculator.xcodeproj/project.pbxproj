@@ -15,6 +15,8 @@
 		B42693AA23FDD595002FFF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42693A823FDD595002FFF76 /* LaunchScreen.storyboard */; };
 		B42693B523FDD595002FFF76 /* Run_Pace_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693B423FDD595002FFF76 /* Run_Pace_CalculatorTests.swift */; };
 		B42693C023FDD595002FFF76 /* Run_Pace_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693BF23FDD595002FFF76 /* Run_Pace_CalculatorUITests.swift */; };
+		B42693CE23FDD9FE002FFF76 /* PaceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */; };
+		B42693D023FDE453002FFF76 /* UnitConverterUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B42693BB23FDD595002FFF76 /* Run Pace CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Run Pace CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42693BF23FDD595002FFF76 /* Run_Pace_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_Pace_CalculatorUITests.swift; sourceTree = "<group>"; };
 		B42693C123FDD595002FFF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceUIView.swift; sourceTree = "<group>"; };
+		B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverterUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B42693A823FDD595002FFF76 /* LaunchScreen.storyboard */,
 				B42693AB23FDD595002FFF76 /* Info.plist */,
 				B42693A523FDD595002FFF76 /* Preview Content */,
+				B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */,
+				B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */,
 			);
 			path = "Run Pace Calculator";
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42693D023FDE453002FFF76 /* UnitConverterUIView.swift in Sources */,
 				B426939E23FDD590002FFF76 /* AppDelegate.swift in Sources */,
+				B42693CE23FDD9FE002FFF76 /* PaceUIView.swift in Sources */,
 				B42693A023FDD590002FFF76 /* SceneDelegate.swift in Sources */,
 				B42693A223FDD590002FFF76 /* ContentView.swift in Sources */,
 			);
