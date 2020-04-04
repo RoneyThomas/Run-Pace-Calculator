@@ -17,6 +17,9 @@
 		B42693C023FDD595002FFF76 /* Run_Pace_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693BF23FDD595002FFF76 /* Run_Pace_CalculatorUITests.swift */; };
 		B42693CE23FDD9FE002FFF76 /* PaceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */; };
 		B42693D023FDE453002FFF76 /* UnitConverterUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */; };
+		B42693D223FDE787002FFF76 /* CardViewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693D123FDE787002FFF76 /* CardViewUIView.swift */; };
+		B49AA87E2409FD1D00884B5A /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49AA87D2409FD1D00884B5A /* GridStack.swift */; };
+		B4F484C0243728CD003D01DD /* PacePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F484BF243728CD003D01DD /* PacePickerUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		B42693C123FDD595002FFF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceUIView.swift; sourceTree = "<group>"; };
 		B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverterUIView.swift; sourceTree = "<group>"; };
+		B42693D123FDE787002FFF76 /* CardViewUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewUIView.swift; sourceTree = "<group>"; };
+		B49AA87D2409FD1D00884B5A /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		B4F484BF243728CD003D01DD /* PacePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacePickerUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				B42693A523FDD595002FFF76 /* Preview Content */,
 				B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */,
 				B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */,
+				B42693D123FDE787002FFF76 /* CardViewUIView.swift */,
+				B49AA87D2409FD1D00884B5A /* GridStack.swift */,
+				B4F484BF243728CD003D01DD /* PacePickerUIView.swift */,
 			);
 			path = "Run Pace Calculator";
 			sourceTree = "<group>";
@@ -274,10 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42693D023FDE453002FFF76 /* UnitConverterUIView.swift in Sources */,
+				B4F484C0243728CD003D01DD /* PacePickerUIView.swift in Sources */,
 				B426939E23FDD590002FFF76 /* AppDelegate.swift in Sources */,
 				B42693CE23FDD9FE002FFF76 /* PaceUIView.swift in Sources */,
 				B42693A023FDD590002FFF76 /* SceneDelegate.swift in Sources */,
+				B49AA87E2409FD1D00884B5A /* GridStack.swift in Sources */,
 				B42693A223FDD590002FFF76 /* ContentView.swift in Sources */,
+				B42693D223FDE787002FFF76 /* CardViewUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,7 @@
 				DEVELOPMENT_TEAM = P95ME6DE55;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Run Pace Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +480,7 @@
 				DEVELOPMENT_TEAM = P95ME6DE55;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Run Pace Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

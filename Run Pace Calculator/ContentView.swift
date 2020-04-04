@@ -10,34 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    
     var body: some View {
-        TabView(selection: $selection){
-            PaceUIView()
-                .tabItem {
-                    VStack {
-                        Image("first")
-                        Text("Running Pace")
-                    }
+        ZStack {
+            Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all)
+            TabView(selection: $selection){
+                PaceUIView()
+                    .tabItem {
+                        VStack {
+                            Image("first")
+                            Text("Running Pace")
+                        }
                 }
                 .tag(0)
-            UnitConverterUIView()
-                .tabItem {
-                    VStack {
-                        Image("second")
-                        Text("Unit Converter")
-                    }
+                UnitConverterUIView()
+                    .tabItem {
+                        VStack {
+                            Image("second")
+                            Text("Unit Converter")
+                        }
                 }
                 .tag(1)
-//            Text("Third View")
-//            .font(.title)
-//            .tabItem {
-//                VStack {
-//                    Image("first")
-//                    Text("Settings")
-//                }
-//            }
-//            .tag(2)
+            }
         }
     }
 }

@@ -11,9 +11,10 @@ import SwiftUI
 struct UnitConverterUIView: View {
     var body: some View {
         NavigationView {
-                Section {
-                    Text("Hello World")
-                }
+            ZStack {
+                Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all)
+                Text("Hello World")
+            }
             .navigationBarTitle(Text("Unit Converter"))
         }
     }
