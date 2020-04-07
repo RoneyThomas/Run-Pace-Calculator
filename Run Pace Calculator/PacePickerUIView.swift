@@ -7,37 +7,47 @@
 //
 
 import SwiftUI
+import Combine
 
 struct PacePickerUIView: View {
-    var units = ["min/km", "min/mi"]
-    @State private var selectionUnit = 0
-    @State private var minute = "4"
-    @State private var second = "38"
+    @Binding var minute: String
+    @Binding var second: String
     var body: some View {
         VStack {
-            Picker("Units", selection: $selectionUnit) {
-                ForEach(0 ..< units.count) { index in
-                    Text(self.units[index])
-                        .tag(index)
-                }
-                
-            }.pickerStyle(SegmentedPickerStyle())
-                .padding(.bottom)
             HStack {
-                TextField("5", text: $minute)
-                    .keyboardType(.numberPad)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("36", text: $second)
-                    .keyboardType(.numberPad)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                VStack {
+                    TextField("5", text: $minute)
+                        .keyboardType(.numberPad)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }.frame(minWidth: 0, maxWidth: .infinity)
+                VStack {
+                    TextField("36", text: $second)
+                        .keyboardType(.numberPad)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }.frame(minWidth: 0, maxWidth: .infinity)
+                VStack {
+                    Button("Set Pace", action: {
+                        UIApplication.shared.endEditing()
+                        print(self.minute, self.second)
+                    })
+                }.frame(minWidth: 0, maxWidth: .infinity)
             }
-            }.padding()
-
+        }.padding()
     }
 }
 
 struct PacePickerUIView_Previews: PreviewProvider {
     static var previews: some View {
-        PacePickerUIView()
+        PacePickerUIView(minute: .constant("4"), second:.constant("18"))
     }
+}
+
+extension UIApplication {
+    
+    func endEditing() {
+        
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        
+    }
+    
 }

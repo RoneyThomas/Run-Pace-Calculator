@@ -167,6 +167,8 @@
 			dependencies = (
 			);
 			name = "Run Pace Calculator";
+			packageProductDependencies = (
+			);
 			productName = "Run Pace Calculator";
 			productReference = B426939A23FDD590002FFF76 /* Run Pace Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +241,8 @@
 				Base,
 			);
 			mainGroup = B426939123FDD590002FFF76;
+			packageReferences = (
+			);
 			productRefGroup = B426939B23FDD590002FFF76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
