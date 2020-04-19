@@ -11,12 +11,15 @@ import Foundation
 
 struct PaceUIView: View {
     var units = ["min/km", "min/mi"]
+    var distance_km = ["1", "2", "3", "4", "5k", "6", "7", "8", "9", "10k", "11", "12", "13", "14", "15", "16", "10 mi", "17", "18", "19", "20", "21", "1/2 Marathon", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "Marathon", "43", "44", "45", "46", "47", "48", "49", "50k"]
+    var distance_mi = ["1", "2", "3", "5k", "4", "5", "6", "10k", "7", "8", "9", "10 mi", "11", "12", "13", "1/2 Marathon", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "Marathon", "27", "28", "29", "30", "31", "50k"]
     @State private var selectionUnit: Int = 0
     @State private var minute_TextField: String = "4"
     @State private var second_TextField: String = "18"
     @State private var seconds: Int = 258
+    
     fileprivate func getTime(distnace: Float) -> String {
-        let interval = round((distnace+1) * Float(seconds))
+        let interval = round((distnace + 1) * Float(seconds))
         
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.hour, .minute, .second]
@@ -28,14 +31,14 @@ struct PaceUIView: View {
     }
     
     var body: some View {
-        let pi = Binding<Int>(get: {
+        let pickerSelection = Binding<Int>(get: {
             return self.selectionUnit
         }, set: {
             var interval: Int = 0
             let formatter = DateComponentsFormatter()
             formatter.unitsStyle = .positional
             formatter.allowedUnits = [.minute, .second]
-            if self.selectionUnit == 0 && $0 == 1{
+            if self.selectionUnit == 0 && $0 == 1 {
                 self.selectionUnit = $0
                 interval = Int(round(1.609344 * Float(self.seconds)))
             } else if self.selectionUnit == 1 && $0 == 0 {
@@ -56,7 +59,7 @@ struct PaceUIView: View {
                 Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all)
                 VStack {
                     VStack {
-                        Picker("Units", selection: pi) {
+                        Picker("Units", selection: pickerSelection) {
                             ForEach(0..<units.count) { index in
                                 Text(self.units[index])
                                     .tag(index)
@@ -77,8 +80,8 @@ struct PaceUIView: View {
                             VStack {
                                 Button("Set Pace", action: {
                                     UIApplication.shared.endEditing()
-                                    self.seconds = ((Int(self.minute_TextField) ?? 0)*60) + (Int(self.second_TextField) ?? 0)
-                                })
+                                    self.seconds = ((Int(self.minute_TextField) ?? 0) * 60) + (Int(self.second_TextField) ?? 0)
+                                }).foregroundColor(Color(UIColor.orange))
                             }.frame(minWidth: 0, maxWidth: .infinity)
                         }
                     }.padding()
@@ -92,26 +95,31 @@ struct PaceUIView: View {
                             }.frame(minWidth: 0, maxWidth: .infinity / 2)
                         }.padding(.vertical)) {
                             if selectionUnit == 0 {
-                                ForEach(0..<50, id: \.self) { index in
+                                ForEach(0..<distance_km.count, id: \.self) { index in
                                     HStack(alignment: .center) {
+                                        //                                        if index == 4 || index == 9 || index == 16 || index == 22 || index == 44 || index == 52 {
+                                        //                                            VStack {
+                                        //                                                Text(self.distance_km[index]).fontWeight(.bold)
+                                        //                                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                                        //                                        }
                                         VStack {
-                                            Text("\(index + 1)").fontWeight(.semibold)
+                                            Text(self.distance_km[index]).fontWeight([4,9,16,22,44,52].contains(index) ? .bold : .semibold)
                                         }.frame(minWidth: 0, maxWidth: .infinity / 2)
                                         VStack {
                                             Text(self.getTime(distnace: Float(index))).fontWeight(.semibold)
                                         }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                    }
+                                    }.listRowBackground([4,9,16,22,44,52].contains(index) ? Color(UIColor.systemGray3) : Color(UIColor.systemBackground))
                                 }
                             } else {
-                                ForEach(0..<35, id: \.self) { index in
+                                ForEach(0..<distance_mi.count, id: \.self) { index in
                                     HStack(alignment: .center) {
                                         VStack {
-                                            Text("\(index + 1)").fontWeight(.semibold)
+                                            Text(self.distance_mi[index]).fontWeight([3,7,11,15,29,35].contains(index) ? .bold : .semibold)
                                         }.frame(minWidth: 0, maxWidth: .infinity / 2)
                                         VStack {
                                             Text(self.getTime(distnace: Float(index))).fontWeight(.semibold)
                                         }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                    }
+                                    }.listRowBackground([3,7,11,15,29,35].contains(index) ? Color(UIColor.systemGray3) : Color(UIColor.systemBackground))
                                 }
                             }
                         }

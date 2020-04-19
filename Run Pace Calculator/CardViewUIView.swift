@@ -9,19 +9,10 @@
 import SwiftUI
 
 struct CardViewUIView: View {
+
     var body: some View {
         VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("This works")
-                        .font(.title)
-                        .fontWeight(.black)
-                        .foregroundColor(.primary)
-                }
-                .layoutPriority(100)
-                Spacer()
-            }
-            .padding()
+            Text("Plain Text")
         }
 //            https://www.appcoda.com/swiftui-card-view/
         .cornerRadius(10)

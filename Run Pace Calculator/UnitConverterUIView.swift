@@ -9,11 +9,39 @@
 import SwiftUI
 
 struct UnitConverterUIView: View {
+    @State var name: String = "6"
     var body: some View {
         NavigationView {
             ZStack {
                 Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all)
-                Text("Hello World")
+                VStack {
+                    HStack(alignment: .firstTextBaseline) {
+                        Text("Mi")
+                        TextField("Name's placeholder", text: $name)
+                            .keyboardType(.numberPad)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        Text("Km")
+                        TextField("Name's placeholder", text: $name)
+                            .keyboardType(.numberPad)
+                        .textFieldStyle(PlainTextFieldStyle())
+                    }
+                    Divider()
+                    HStack(alignment: .firstTextBaseline) {
+                        Text("Mi/hr")
+                        TextField("Name's placeholder", text: $name)
+                            .keyboardType(.numberPad)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        Text("Km/hr")
+                        TextField("Name's placeholder", text: $name)
+                            .keyboardType(.numberPad)
+                        .textFieldStyle(PlainTextFieldStyle())
+                    }
+                    Divider()
+                    Spacer()
+                }.padding()
+                .onTapGesture {
+                    UIApplication.shared.endEditing()
+                }
             }
             .navigationBarTitle(Text("Unit Converter"))
         }

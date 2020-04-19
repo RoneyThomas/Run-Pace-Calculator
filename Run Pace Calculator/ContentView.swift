@@ -12,27 +12,36 @@ struct ContentView: View {
     @State private var selection = 0
     
     var body: some View {
-        ZStack {
-            Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all)
-            TabView(selection: $selection){
-                PaceUIView()
-                    .tabItem {
-                        VStack {
-                            Image("first")
-                            Text("Running Pace")
-                        }
-                }
-                .tag(0)
-                UnitConverterUIView()
-                    .tabItem {
-                        VStack {
-                            Image("second")
-                            Text("Unit Converter")
-                        }
-                }
-                .tag(1)
-            }
-        }
+        PaceUIView()
+        //        ZStack {
+        //            Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all)
+        //            TabView(selection: $selection){
+        //                PaceUIView()
+        //                    .tabItem {
+        //                        VStack {
+        //                            Image("first")
+        //                            Text("Running Pace")
+        //                        }
+        //                }
+        //                .tag(0)
+        //                UnitConverterUIView()
+        //                    .tabItem {
+        //                        VStack {
+        //                            Image("second")
+        //                            Text("Unit Converter")
+        //                        }
+        //                }
+        //                .tag(1)
+        //                TextViewExperiment()
+        //                .tabItem {
+        //                        VStack {
+        //                            Image("second")
+        //                            Text("Unit Converter")
+        //                        }
+        //                }
+        //                .tag(2)
+        //            }
+        //        }
     }
 }
 

@@ -19,6 +19,7 @@
 		B42693D023FDE453002FFF76 /* UnitConverterUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */; };
 		B42693D223FDE787002FFF76 /* CardViewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42693D123FDE787002FFF76 /* CardViewUIView.swift */; };
 		B49AA87E2409FD1D00884B5A /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49AA87D2409FD1D00884B5A /* GridStack.swift */; };
+		B4A100B2244974DB00EF477F /* TextViewExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A100B1244974DB00EF477F /* TextViewExperiment.swift */; };
 		B4F484C0243728CD003D01DD /* PacePickerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F484BF243728CD003D01DD /* PacePickerUIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverterUIView.swift; sourceTree = "<group>"; };
 		B42693D123FDE787002FFF76 /* CardViewUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewUIView.swift; sourceTree = "<group>"; };
 		B49AA87D2409FD1D00884B5A /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		B4A100B1244974DB00EF477F /* TextViewExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExperiment.swift; sourceTree = "<group>"; };
 		B4F484BF243728CD003D01DD /* PacePickerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacePickerUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				B42693A523FDD595002FFF76 /* Preview Content */,
 				B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */,
 				B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */,
+				B4A100B1244974DB00EF477F /* TextViewExperiment.swift */,
 				B42693D123FDE787002FFF76 /* CardViewUIView.swift */,
 				B49AA87D2409FD1D00884B5A /* GridStack.swift */,
 				B4F484BF243728CD003D01DD /* PacePickerUIView.swift */,
@@ -293,6 +296,7 @@
 				B42693A023FDD590002FFF76 /* SceneDelegate.swift in Sources */,
 				B49AA87E2409FD1D00884B5A /* GridStack.swift in Sources */,
 				B42693A223FDD590002FFF76 /* ContentView.swift in Sources */,
+				B4A100B2244974DB00EF477F /* TextViewExperiment.swift in Sources */,
 				B42693D223FDE787002FFF76 /* CardViewUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -471,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -492,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
