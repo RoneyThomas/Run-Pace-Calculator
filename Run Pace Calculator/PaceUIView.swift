@@ -17,6 +17,7 @@ struct PaceUIView: View {
     @State private var minute_TextField: String = "4"
     @State private var second_TextField: String = "18"
     @State private var seconds: Int = 258
+    @State private var saved: Bool = false
     
     fileprivate func getTime(distnace: Float) -> String {
         let interval = round((distnace + 1) * Float(seconds))
@@ -97,11 +98,6 @@ struct PaceUIView: View {
                             if selectionUnit == 0 {
                                 ForEach(0..<distance_km.count, id: \.self) { index in
                                     HStack(alignment: .center) {
-                                        //                                        if index == 4 || index == 9 || index == 16 || index == 22 || index == 44 || index == 52 {
-                                        //                                            VStack {
-                                        //                                                Text(self.distance_km[index]).fontWeight(.bold)
-                                        //                                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                        //                                        }
                                         VStack {
                                             Text(self.distance_km[index]).fontWeight([4,9,16,22,44,52].contains(index) ? .bold : .semibold)
                                         }.frame(minWidth: 0, maxWidth: .infinity / 2)
@@ -125,14 +121,13 @@ struct PaceUIView: View {
                         }
                     }.listStyle(DefaultListStyle())
                 }
-                //                    navigationBarItems(trailing:
-                //                        Button("Help") {
-                //                            UIApplication.shared.windows.forEach { $0.endEditing(true)}
-                //                        }
-                //                        .modifier(AdaptsToSoftwareKeyboard())
-                //                    )
             }
             .navigationBarTitle(Text("Pace Calculator"))
+            .navigationBarItems(
+                trailing: Button(action:{self.saved = !self.saved}) {
+                    self.saved ? Image(systemName: "star.fill") : Image(systemName: "star")
+                }
+            )
         }
     }
 }
