@@ -116,8 +116,8 @@
 				B42693A123FDD590002FFF76 /* ContentView.swift */,
 				B42693A323FDD595002FFF76 /* Assets.xcassets */,
 				B42693A823FDD595002FFF76 /* LaunchScreen.storyboard */,
-				B42693AB23FDD595002FFF76 /* Info.plist */,
 				B42693A523FDD595002FFF76 /* Preview Content */,
+				B42693AB23FDD595002FFF76 /* Info.plist */,
 				B42693CD23FDD9FE002FFF76 /* PaceUIView.swift */,
 				B42693CF23FDE453002FFF76 /* UnitConverterUIView.swift */,
 				B4A100B1244974DB00EF477F /* TextViewExperiment.swift */,
@@ -463,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Run Pace Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = P95ME6DE55;
 				ENABLE_PREVIEWS = YES;
@@ -472,6 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -484,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Run Pace Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = P95ME6DE55;
 				ENABLE_PREVIEWS = YES;
@@ -493,6 +496,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

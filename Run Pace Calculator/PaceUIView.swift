@@ -13,11 +13,13 @@ struct PaceUIView: View {
     var units = ["min/km", "min/mi"]
     var distance_km = ["1", "2", "3", "4", "5k", "6", "7", "8", "9", "10k", "11", "12", "13", "14", "15", "16", "10 mi", "17", "18", "19", "20", "21", "1/2 Marathon", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "Marathon", "43", "44", "45", "46", "47", "48", "49", "50k"]
     var distance_mi = ["1", "2", "3", "5k", "4", "5", "6", "10k", "7", "8", "9", "10 mi", "11", "12", "13", "1/2 Marathon", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "Marathon", "27", "28", "29", "30", "31", "50k"]
-    @State private var selectionUnit: Int = 0
-    @State private var minute_TextField: String = "4"
-    @State private var second_TextField: String = "18"
-    @State private var seconds: Int = 258
+    @State private var selectionUnit: Int = UserDefaults.standard.integer(forKey: "selectionUnit")
+    @State private var minute_TextField: String = UserDefaults.standard.object(forKey: "minutes_text") as? String ?? "4"
+    @State private var second_TextField: String = UserDefaults.standard.object(forKey: "seconds_text") as? String ?? "36"
+    @State private var seconds: Int = UserDefaults.standard.integer(forKey: "seconds") == 0 ? 258 : UserDefaults.standard.integer(forKey: "seconds")
     @State private var saved: Bool = false
+    
+    
     
     fileprivate func getTime(distnace: Float) -> String {
         let interval = round((distnace + 1) * Float(seconds))
@@ -50,10 +52,14 @@ struct PaceUIView: View {
             let formatted_string = (formatter.string(from: TimeInterval(interval))!).split(separator: ":")
             if formatted_string.count == 1 {
                 self.second_TextField = String(formatted_string[0])
+                UserDefaults.standard.set(self.second_TextField, forKey: "seconds_text")
             } else if formatted_string.count == 2 {
                 self.minute_TextField = String(formatted_string[0])
+                UserDefaults.standard.set(self.minute_TextField, forKey: "minutes_text")
                 self.second_TextField = String(formatted_string[1])
+                UserDefaults.standard.set(self.second_TextField, forKey: "seconds_text")
             }
+            UserDefaults.standard.set(self.selectionUnit, forKey: "selectionUnit")
         })
         return NavigationView {
             ZStack(alignment: .topLeading) {
@@ -82,6 +88,10 @@ struct PaceUIView: View {
                                 Button("Set Pace", action: {
                                     UIApplication.shared.endEditing()
                                     self.seconds = ((Int(self.minute_TextField) ?? 0) * 60) + (Int(self.second_TextField) ?? 0)
+                                    UserDefaults.standard.set(self.minute_TextField, forKey: "minutes_text")
+                                    UserDefaults.standard.set(self.second_TextField, forKey: "seconds_text")
+                                    UserDefaults.standard.set(self.seconds, forKey: "seconds")
+                                    UserDefaults.standard.set(self.selectionUnit, forKey: "selectionUnit")
                                 }).foregroundColor(Color(UIColor.orange))
                             }.frame(minWidth: 0, maxWidth: .infinity)
                         }
@@ -123,11 +133,11 @@ struct PaceUIView: View {
                 }
             }
             .navigationBarTitle(Text("Pace Calculator"))
-            .navigationBarItems(
-                trailing: Button(action:{self.saved = !self.saved}) {
-                    self.saved ? Image(systemName: "star.fill") : Image(systemName: "star")
-                }
-            )
+//            .navigationBarItems(
+//                trailing: Button(action:{self.saved = !self.saved}) {
+//                    self.saved ? Image(systemName: "star.fill") : Image(systemName: "star")
+//                }
+//            )
         }
     }
 }
