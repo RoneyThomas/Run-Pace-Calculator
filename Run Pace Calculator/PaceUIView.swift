@@ -96,40 +96,40 @@ struct PaceUIView: View {
                             }.frame(minWidth: 0, maxWidth: .infinity)
                         }
                     }.padding()
-                    List {
-                        Section(header: HStack(alignment: .center) {
-                            VStack {
-                                Text("Dist \(selectionUnit == 0 ? "km" : "mi")").font(.headline)
-                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                            VStack {
-                                Text("\(minute_TextField)" + ":" + "\(second_TextField)").font(.headline)
-                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                        }.padding(.vertical)) {
-                            if selectionUnit == 0 {
-                                ForEach(0..<distance_km.count, id: \.self) { index in
-                                    HStack(alignment: .center) {
-                                        VStack {
-                                            Text(self.distance_km[index]).fontWeight([4,9,16,22,44,52].contains(index) ? .bold : .semibold)
-                                        }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                        VStack {
-                                            Text(self.getTime(distnace: Float(index))).fontWeight(.semibold)
-                                        }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                    }.listRowBackground([4,9,16,22,44,52].contains(index) ? Color(UIColor.systemGray3) : Color(UIColor.systemBackground))
-                                }
-                            } else {
-                                ForEach(0..<distance_mi.count, id: \.self) { index in
-                                    HStack(alignment: .center) {
-                                        VStack {
-                                            Text(self.distance_mi[index]).fontWeight([3,7,11,15,29,35].contains(index) ? .bold : .semibold)
-                                        }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                        VStack {
-                                            Text(self.getTime(distnace: Float(index))).fontWeight(.semibold)
-                                        }.frame(minWidth: 0, maxWidth: .infinity / 2)
-                                    }.listRowBackground([3,7,11,15,29,35].contains(index) ? Color(UIColor.systemGray3) : Color(UIColor.systemBackground))
+                        List {
+                            Section(header: HStack(alignment: .center) {
+                                VStack {
+                                    Text("Dist \(selectionUnit == 0 ? "km" : "mi")").font(.headline)
+                                }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                                VStack {
+                                    Text("\(minute_TextField)" + ":" + "\(second_TextField)").font(.headline)
+                                }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                            }.padding(.vertical)) {
+                                if selectionUnit == 0 {
+                                    ForEach(0..<distance_km.count, id: \.self) { index in
+                                        HStack(alignment: .center) {
+                                            VStack {
+                                                Text(self.distance_km[index]).fontWeight([4,9,16,22,44,52].contains(index) ? .bold : .semibold)
+                                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                                            VStack {
+                                                Text(self.getTime(distnace: Float(index))).fontWeight(.semibold)
+                                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                                        }.listRowBackground([4,9,16,22,44,52].contains(index) ? Color(UIColor.systemGray3) : Color(UIColor.systemBackground))
+                                    }
+                                } else {
+                                    ForEach(0..<distance_mi.count, id: \.self) { index in
+                                        HStack(alignment: .center) {
+                                            VStack {
+                                                Text(self.distance_mi[index]).fontWeight([3,7,11,15,29,35].contains(index) ? .bold : .semibold)
+                                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                                            VStack {
+                                                Text(self.getTime(distnace: Float(index))).fontWeight(.semibold)
+                                            }.frame(minWidth: 0, maxWidth: .infinity / 2)
+                                        }.listRowBackground([3,7,11,15,29,35].contains(index) ? Color(UIColor.systemGray3) : Color(UIColor.systemBackground))
+                                    }
                                 }
                             }
-                        }
-                    }.listStyle(DefaultListStyle())
+                        }.listStyle(InsetListStyle())
                 }
             }
             .navigationBarTitle(Text("Pace Calculator"))
@@ -147,3 +147,4 @@ struct PaceUIView_Previews: PreviewProvider {
         PaceUIView()
     }
 }
+
