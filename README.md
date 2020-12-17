@@ -2,7 +2,7 @@
 
 Run Pace is a swift universal app to calculate your running pace.
 
-![Screenshot](https://github.com/RoneyThomas/Run-Pace-Calculator/docs/images/Simulator Screen Shot - iPhone 12 - 2020-12-15 at 11.49.24.png)
+<img src="https://github.com/RoneyThomas/Run-Pace-Calculator/blob/master/docs/img/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202020-12-15%20at%2011.49.24.png?raw=true" alt="app screenshot" width="225" height="487" />
 
 ## License
 This project is licensed under the terms of the The Unlicense
