@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B49BC2CB25607C610004C2DC /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2CA25607C610004C2DC /* Tests_iOS.swift */; };
+		B49BC2D625607C610004C2DC /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2D525607C610004C2DC /* Tests_macOS.swift */; };
+		B49BC2D825607C610004C2DC /* Run_PaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2AF25607C610004C2DC /* Run_PaceApp.swift */; };
+		B49BC2D925607C610004C2DC /* Run_PaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2AF25607C610004C2DC /* Run_PaceApp.swift */; };
+		B49BC2DA25607C610004C2DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2B025607C610004C2DC /* ContentView.swift */; };
+		B49BC2DB25607C610004C2DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2B025607C610004C2DC /* ContentView.swift */; };
+		B49BC2DC25607C610004C2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49BC2B125607C610004C2DC /* Assets.xcassets */; };
+		B49BC2DD25607C610004C2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49BC2B125607C610004C2DC /* Assets.xcassets */; };
+		B4CB6C7725840CF200E65B95 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CB6C7625840CF200E65B95 /* Media.xcassets */; };
+		B4CB6C7825840CF200E65B95 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CB6C7625840CF200E65B95 /* Media.xcassets */; };
+		B4FCACFF256246D200C75FB5 /* PaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FCACFE256246D200C75FB5 /* PaceView.swift */; };
+		B4FCAD00256246D200C75FB5 /* PaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FCACFE256246D200C75FB5 /* PaceView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B49BC2C725607C610004C2DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49BC2AA25607C600004C2DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49BC2B525607C610004C2DC;
+			remoteInfo = "Run Pace (iOS)";
+		};
+		B49BC2D225607C610004C2DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49BC2AA25607C600004C2DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49BC2BD25607C610004C2DC;
+			remoteInfo = "Run Pace (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B49BC2AF25607C610004C2DC /* Run_PaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_PaceApp.swift; sourceTree = "<group>"; };
+		B49BC2B025607C610004C2DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B49BC2B125607C610004C2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B49BC2B625607C610004C2DC /* Run Pace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run Pace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49BC2B925607C610004C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49BC2BE25607C610004C2DC /* Run Pace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run Pace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49BC2C025607C610004C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49BC2C125607C610004C2DC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B49BC2C625607C610004C2DC /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49BC2CA25607C610004C2DC /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		B49BC2CC25607C610004C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49BC2D125607C610004C2DC /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49BC2D525607C610004C2DC /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		B49BC2D725607C610004C2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CB6C7625840CF200E65B95 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		B4FCACFE256246D200C75FB5 /* PaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B49BC2B325607C610004C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2BB25607C610004C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2C325607C610004C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2CE25607C610004C2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B49BC2A925607C600004C2DC = {
+			isa = PBXGroup;
+			children = (
+				B4CB6C7625840CF200E65B95 /* Media.xcassets */,
+				B49BC2AE25607C610004C2DC /* Shared */,
+				B49BC2B825607C610004C2DC /* iOS */,
+				B49BC2BF25607C610004C2DC /* macOS */,
+				B49BC2C925607C610004C2DC /* Tests iOS */,
+				B49BC2D425607C610004C2DC /* Tests macOS */,
+				B49BC2B725607C610004C2DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B49BC2AE25607C610004C2DC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B49BC2AF25607C610004C2DC /* Run_PaceApp.swift */,
+				B49BC2B025607C610004C2DC /* ContentView.swift */,
+				B49BC2B125607C610004C2DC /* Assets.xcassets */,
+				B4FCACFE256246D200C75FB5 /* PaceView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B49BC2B725607C610004C2DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B49BC2B625607C610004C2DC /* Run Pace.app */,
+				B49BC2BE25607C610004C2DC /* Run Pace.app */,
+				B49BC2C625607C610004C2DC /* Tests iOS.xctest */,
+				B49BC2D125607C610004C2DC /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B49BC2B825607C610004C2DC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B49BC2B925607C610004C2DC /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B49BC2BF25607C610004C2DC /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B49BC2C025607C610004C2DC /* Info.plist */,
+				B49BC2C125607C610004C2DC /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		B49BC2C925607C610004C2DC /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B49BC2CA25607C610004C2DC /* Tests_iOS.swift */,
+				B49BC2CC25607C610004C2DC /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		B49BC2D425607C610004C2DC /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B49BC2D525607C610004C2DC /* Tests_macOS.swift */,
+				B49BC2D725607C610004C2DC /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B49BC2B525607C610004C2DC /* Run Pace (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49BC2E025607C610004C2DC /* Build configuration list for PBXNativeTarget "Run Pace (iOS)" */;
+			buildPhases = (
+				B49BC2B225607C610004C2DC /* Sources */,
+				B49BC2B325607C610004C2DC /* Frameworks */,
+				B49BC2B425607C610004C2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Run Pace (iOS)";
+			productName = "Run Pace (iOS)";
+			productReference = B49BC2B625607C610004C2DC /* Run Pace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B49BC2BD25607C610004C2DC /* Run Pace (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49BC2E325607C610004C2DC /* Build configuration list for PBXNativeTarget "Run Pace (macOS)" */;
+			buildPhases = (
+				B49BC2BA25607C610004C2DC /* Sources */,
+				B49BC2BB25607C610004C2DC /* Frameworks */,
+				B49BC2BC25607C610004C2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Run Pace (macOS)";
+			productName = "Run Pace (macOS)";
+			productReference = B49BC2BE25607C610004C2DC /* Run Pace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B49BC2C525607C610004C2DC /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49BC2E625607C610004C2DC /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				B49BC2C225607C610004C2DC /* Sources */,
+				B49BC2C325607C610004C2DC /* Frameworks */,
+				B49BC2C425607C610004C2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49BC2C825607C610004C2DC /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = B49BC2C625607C610004C2DC /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B49BC2D025607C610004C2DC /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49BC2E925607C610004C2DC /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				B49BC2CD25607C610004C2DC /* Sources */,
+				B49BC2CE25607C610004C2DC /* Frameworks */,
+				B49BC2CF25607C610004C2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49BC2D325607C610004C2DC /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = B49BC2D125607C610004C2DC /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B49BC2AA25607C600004C2DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B49BC2B525607C610004C2DC = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B49BC2BD25607C610004C2DC = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B49BC2C525607C610004C2DC = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B49BC2B525607C610004C2DC;
+					};
+					B49BC2D025607C610004C2DC = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B49BC2BD25607C610004C2DC;
+					};
+				};
+			};
+			buildConfigurationList = B49BC2AD25607C600004C2DC /* Build configuration list for PBXProject "Run Pace" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B49BC2A925607C600004C2DC;
+			productRefGroup = B49BC2B725607C610004C2DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B49BC2B525607C610004C2DC /* Run Pace (iOS) */,
+				B49BC2BD25607C610004C2DC /* Run Pace (macOS) */,
+				B49BC2C525607C610004C2DC /* Tests iOS */,
+				B49BC2D025607C610004C2DC /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B49BC2B425607C610004C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CB6C7725840CF200E65B95 /* Media.xcassets in Resources */,
+				B49BC2DC25607C610004C2DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2BC25607C610004C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CB6C7825840CF200E65B95 /* Media.xcassets in Resources */,
+				B49BC2DD25607C610004C2DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2C425607C610004C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2CF25607C610004C2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B49BC2B225607C610004C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49BC2DA25607C610004C2DC /* ContentView.swift in Sources */,
+				B49BC2D825607C610004C2DC /* Run_PaceApp.swift in Sources */,
+				B4FCACFF256246D200C75FB5 /* PaceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2BA25607C610004C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49BC2DB25607C610004C2DC /* ContentView.swift in Sources */,
+				B49BC2D925607C610004C2DC /* Run_PaceApp.swift in Sources */,
+				B4FCAD00256246D200C75FB5 /* PaceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2C225607C610004C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49BC2CB25607C610004C2DC /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49BC2CD25607C610004C2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49BC2D625607C610004C2DC /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B49BC2C825607C610004C2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49BC2B525607C610004C2DC /* Run Pace (iOS) */;
+			targetProxy = B49BC2C725607C610004C2DC /* PBXContainerItemProxy */;
+		};
+		B49BC2D325607C610004C2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49BC2BD25607C610004C2DC /* Run Pace (macOS) */;
+			targetProxy = B49BC2D225607C610004C2DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B49BC2DE25607C610004C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B49BC2DF25607C610004C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B49BC2E125607C610004C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator";
+				PRODUCT_NAME = "Run Pace";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B49BC2E225607C610004C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator";
+				PRODUCT_NAME = "Run Pace";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B49BC2E425607C610004C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator.Run-Pace";
+				PRODUCT_NAME = "Run Pace";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B49BC2E525607C610004C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator.Run-Pace";
+				PRODUCT_NAME = "Run Pace";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B49BC2E725607C610004C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Run Pace (iOS)";
+			};
+			name = Debug;
+		};
+		B49BC2E825607C610004C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Run Pace (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B49BC2EA25607C610004C2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Run Pace (macOS)";
+			};
+			name = Debug;
+		};
+		B49BC2EB25607C610004C2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P95ME6DE55;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.roney.Run-Pace-Calculator.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Run Pace (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B49BC2AD25607C600004C2DC /* Build configuration list for PBXProject "Run Pace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49BC2DE25607C610004C2DC /* Debug */,
+				B49BC2DF25607C610004C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49BC2E025607C610004C2DC /* Build configuration list for PBXNativeTarget "Run Pace (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49BC2E125607C610004C2DC /* Debug */,
+				B49BC2E225607C610004C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49BC2E325607C610004C2DC /* Build configuration list for PBXNativeTarget "Run Pace (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49BC2E425607C610004C2DC /* Debug */,
+				B49BC2E525607C610004C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49BC2E625607C610004C2DC /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49BC2E725607C610004C2DC /* Debug */,
+				B49BC2E825607C610004C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49BC2E925607C610004C2DC /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49BC2EA25607C610004C2DC /* Debug */,
+				B49BC2EB25607C610004C2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B49BC2AA25607C600004C2DC /* Project object */;
+}
