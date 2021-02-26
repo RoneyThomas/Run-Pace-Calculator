@@ -10,17 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         #if os(iOS)
-        PaceView()
-//        TabView {
-//            PaceView().tabItem{
-//                Image(systemName: "1.circle")
-//                Text("Pace Calculator")
-//            }
-//            Text("Conversion").tabItem{
-//                Image(systemName: "2.circle")
-//                Text("Complete In")
-//            }
-//        }
+//        PaceView()
+        TabView {
+            PaceView().tabItem{
+                Image(systemName: "1.circle")
+                Text("Pace Calculator")
+            }
+            ConversionView().tabItem{
+                Image(systemName: "2.circle")
+                Text("Conversion")
+            }
+        }
         #else
         Text("Hello, world!")
             .padding()

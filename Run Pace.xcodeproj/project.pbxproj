@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B45BF74125E7395700F0A931 /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BF74025E7395700F0A931 /* ConversionView.swift */; };
+		B45BF74225E7395700F0A931 /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BF74025E7395700F0A931 /* ConversionView.swift */; };
 		B49BC2CB25607C610004C2DC /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2CA25607C610004C2DC /* Tests_iOS.swift */; };
 		B49BC2D625607C610004C2DC /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2D525607C610004C2DC /* Tests_macOS.swift */; };
 		B49BC2D825607C610004C2DC /* Run_PaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49BC2AF25607C610004C2DC /* Run_PaceApp.swift */; };
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B45BF74025E7395700F0A931 /* ConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionView.swift; sourceTree = "<group>"; };
 		B49BC2AF25607C610004C2DC /* Run_PaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_PaceApp.swift; sourceTree = "<group>"; };
 		B49BC2B025607C610004C2DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B49BC2B125607C610004C2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 				B49BC2B025607C610004C2DC /* ContentView.swift */,
 				B49BC2B125607C610004C2DC /* Assets.xcassets */,
 				B4FCACFE256246D200C75FB5 /* PaceView.swift */,
+				B45BF74025E7395700F0A931 /* ConversionView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -318,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45BF74125E7395700F0A931 /* ConversionView.swift in Sources */,
 				B49BC2DA25607C610004C2DC /* ContentView.swift in Sources */,
 				B49BC2D825607C610004C2DC /* Run_PaceApp.swift in Sources */,
 				B4FCACFF256246D200C75FB5 /* PaceView.swift in Sources */,
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45BF74225E7395700F0A931 /* ConversionView.swift in Sources */,
 				B49BC2DB25607C610004C2DC /* ContentView.swift in Sources */,
 				B49BC2D925607C610004C2DC /* Run_PaceApp.swift in Sources */,
 				B4FCAD00256246D200C75FB5 /* PaceView.swift in Sources */,
